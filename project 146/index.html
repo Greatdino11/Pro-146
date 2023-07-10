@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-entity position="0 0 -1"
+        animation="property: rotation; to: 360 0 0;easing:easeInOutElastic; loop: true; dur: 2000">
+            <!-- Body -->
+            <a-cylinder position="0 0.5 -3" radius="0.7" height="1.2" color="#0044aa"></a-cylinder>
+
+            <!-- Head -->
+            <a-sphere position="0 2 -3" radius="1.2" color="#0044aa"></a-sphere>
+            <a-sphere position="0 1.9 -2.6" radius="0.9" color="#ffffff"></a-sphere>
+            <a-sphere position="0 2 -1.8" radius="0.15" color="red"></a-sphere>
+
+            <!-- Eyes -->
+            <a-sphere position="-0.3 2.3 -2" radius="0.25" color="#ffffff"></a-sphere>
+            <a-sphere position="0.3 2.3 -2" radius="0.25" color="#ffffff"></a-sphere>
+            <a-sphere position="-0.3 2.3 -1.8" radius="0.1" color="#000000"></a-sphere>
+            <a-sphere position="0.3 2.3 -1.8" radius="0.1" color="#000000"></a-sphere>
+
+            <!-- Red -->
+            <a-torus position="0 1.1 -2.8" radius="0.7" radius-tubular="0.03" rotation="90 0 0" color="#ff0000"></a-torus>
+
+            <!-- Whiskers -->
+            <a-cylinder position="0.5 2 -1.8" radius="0.02" height="0.6" rotation="0 0 -60" color="#000000"></a-cylinder>
+            <a-cylinder position="-0.5 2 -1.8" radius="0.02" height="0.6" rotation="0 0 60" color="#000000"></a-cylinder>
+            <a-cylinder position="0.5 1.8 -1.8" radius="0.02" height="0.6" rotation="0 0 -70" color="#000000"></a-cylinder>
+            <a-cylinder position="-0.5 1.8 -1.8" radius="0.02" height="0.6" rotation="0 0 70" color="#000000"></a-cylinder>
+
+            <!-- Hands -->
+            <a-sphere position="-0.8 0.5 -3" radius="0.3" color="#ffffff"></a-sphere>
+            <a-sphere position="0.8 0.5 -3" radius="0.3" color="#ffffff"></a-sphere>
+
+            <!-- Legs -->
+            <a-cylinder position="-0.3 -0.5 -3" radius="0.3" height="0.5" color="#ffffff"></a-cylinder>
+            <a-cylinder position="0.3 -0.5 -3" radius="0.3" height="0.5" color="#ffffff"></a-cylinder>
+        </a-entity>
+        
+        <a-sky color="lightblue"></a-sky> <!-- Background -->
+
+    </a-scene>
+</body>
+
+</html>
